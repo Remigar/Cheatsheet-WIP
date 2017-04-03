@@ -8,8 +8,7 @@
     }
 
     Course.prototype.createTopic = function (topic) {
-        console.log(topic)
-        console.log('Creating topic: ' + topic['topicDesc'] + 'for course ' + this.courseID);
+        console.log('Creating topic: ' + topic['topicDesc'] + ' for course ' + this.courseID);
         return this.db.add(topic.emailAddress, topic);
     };
 

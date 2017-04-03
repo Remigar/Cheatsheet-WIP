@@ -1,8 +1,21 @@
 {
   "CPSC-473": [
-    
+    {
+      "className": "CPSC-473",
+      "topicDesc": "lel kek",
+      "emailAddress": "asdf@gaerb",
+      "id": "asdf@gaerb",
+      "likes": "0",
+      "dislikes": "0"
+    },
+    {
+      "className": "CPSC-473",
+      "topicDesc": "sdff",
+      "emailAddress": "gthw2@AFGR",
+      "id": "gthw2@AFGR",
+      "likes": "0",
+      "dislikes": "0"
+    }
   ],
-  "CPSC-120": [
-
-  ]
+  "CPSC-120": []
 }

@@ -36,13 +36,26 @@
 
         var $label = $('<label></label>');
 
-        //vote buttons
+        /*var $likeCount = $('<label for="likelabel"></label>');
+        $likeCount.text(topic['likes']);
+        var $dislikeCount = $('<label> for="dislikelabel"</label>');
+        $dislikeCount.text(topic['dislikes']);*/
+        var voteTotal = parseInt(topic['likes']) - parseInt(topic['dislikes']);
+        console.log(voteTotal);
+        var $topicScore = $('<label for="scoreLabel"></label>');
+        $topicScore.text(voteTotal.toString());
 
-        var description = topic.description;
+        var description = topic['topicDesc'];
+
+        var $likeButton = $('<input type="button" class="likeBtn" value="1" name="likeBtn" id="likeBtn"/>');
+        var $dislikeButton = $('<input type="button" class = "dislikeBtn" value="1" name="dislikeBtn" id="dislikeBtn"');
+        //give these like buttons a unique id
+
 
         $label.append(description);
         $div.append($label);
-
+        $div.append($likeButton);
+        $div.append($dislikeButton);
         this.$element = $div;
     }
 
